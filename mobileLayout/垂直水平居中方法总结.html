@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>让子级垂直居中方法</title>
+	<style>
+
+		.box1{
+			width:200px;
+			height:200px;
+			border: 1px solid #ccc;
+			display: -webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+		}
+		.div1{
+			width: 100px;
+			height: 100px;
+			background: pink;
+		}
+
+
+		.box2{
+			width:200px;
+			height:200px;
+			border: 1px solid #ccc;
+			position: relative;
+		}
+		.div2{
+			width: 100px;
+			height: 100px;
+			background: pink;
+			position: absolute;
+			top:0;
+			right:0;
+			bottom: 0;
+			left:0;
+			margin:auto;
+		}
+
+		.box3{
+			width:200px;
+			height:200px;
+			border: 1px solid #ccc;
+			position: relative;
+		}
+		.div3{
+			width: 100px;
+			height: 100px;
+			background: pink;
+			position: absolute;
+			top:50%;
+			left:50%;
+			margin-top: -50px;
+			margin-left: -50px;
+		}
+
+		.box4{
+			width:200px;
+			height:200px;
+			border: 1px solid #ccc;
+			position: relative;
+		}
+		.div4{
+			width: 100px;
+			height: 100px;
+			background: pink;
+			position: absolute;
+			top:50%;
+  			left:50%;
+			transform:translate(-50%,-50%);
+		}
+
+		.box5{
+			width:200px;
+			height:200px;
+			border:1px solid #ccc;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.div5{
+			width:100px;
+			height: 100px;
+			background: pink;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="div1"></div>
+	</div>
+
+	<div class="box2">
+		<div class="div2"></div>
+	</div>
+
+	<div class="box3">
+		<div class="div3"></div>
+	</div>
+
+	<div class="box4">
+		<div class="div4"></div>
+	</div>
+
+	<div class="box5">
+		<div class="div5"></div>
+	</div>
+</body>
+</html>
